@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { Toaster, toast } from "@/components/ui/sonner";
+import { Toaster } from "@/components/ui/sonner";
 import Papa from "papaparse";
 
 const Index = () => {
@@ -23,7 +23,7 @@ const Index = () => {
         },
       });
     } else {
-      toast.error("Please upload a valid .csv file");
+      alert("Please upload a valid .csv file");
     }
   };
 
